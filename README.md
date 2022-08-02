@@ -31,13 +31,17 @@ Dataset sample is too small with highly imbalanced class. Oversampling of the cl
 ### Performance:
 
 Accuracy plot
+
 ![Accuracy](figures/fraud_detection_mlp_accuracy.png) 
 
 Loss plot
+
 ![Loss](figures/fraud_detection_mlp_loss.png)
 
 Confusion matrix plot
+
 ![Confusion](figures/fraud_detection_mlp_confusion.png)
 
 Report of test dataset results
+
 ![Result](figures/model_test_result.PNG)
