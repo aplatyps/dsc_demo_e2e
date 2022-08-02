@@ -13,7 +13,7 @@ Self explanatory landing page
 
 Information on the dataset
 
-[db_page](figures/webapp_page2_1.PNG)
+![db_page](figures/webapp_page2_1.PNG)
 
 Job fraud detection page. For now the web app accepts input as a .csv file. The input will be fed to the saved model for deployment.
 
@@ -23,12 +23,17 @@ Output of the model is returned as a list for now. Not planning to do UI/UX here
 
 ![jf_page2](figures/webapp_page3_2.PNG)
 
-###Performance:
 
-![Accuracy](figures/fraud_detection_mlp_accuracy.PNG) 
+### Performance:
 
-![Loss](figures/fraud_detection_mlp_loss.PNG)
+Accuracy plot
+![Accuracy](figures/fraud_detection_mlp_accuracy.png) 
 
-![Confusion](figures/fraud_detection_mlp_confusion.PNG)
+Loss plot
+![Loss](figures/fraud_detection_mlp_loss.png)
 
+Confusion matrix plot
+![Confusion](figures/fraud_detection_mlp_confusion.png)
+
+Report of test dataset results
 ![Result](figures/model_test_result.PNG)
