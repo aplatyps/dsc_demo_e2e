@@ -24,6 +24,10 @@ Output of the model is returned as a list for now. Not planning to do UI/UX here
 ![jf_page2](figures/webapp_page3_2.PNG)
 
 
+### Methodology
+
+Dataset sample is too small with highly imbalanced class. Oversampling of the class with lower samples is used. Dataset is then splitted into training, validation and test set. Data is heavily pre-processed before use.
+
 ### Performance:
 
 Accuracy plot
