@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<img src="static/main.png">
+<title>Employment Fraud Detection with Deep Learning</title>
+<meta charset="UTF-8">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Calibri", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#problem" class="w3-bar-item w3-button">Problem</a>
+      <a href="#solution" class="w3-bar-item w3-button">Solution</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="static/demo_arc.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Demo Web App Architecture</h1><br>
+      <ul class="w3-large">
+          <li>Server hosted locally with Flask.</li>
+          <li>SQLite as relational database.</li>
+          <li>Base code written in Python.</li>
+          <li>HTTP with Restful API.</li>
+          <li>Web UI written in HTML.</li>
+        </ul>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Problem Section -->
+  <div class="w3-row w3-padding-64" id="problem">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Employment Fraud</h1><br>
+      <h4>Background</h4>
+      <p class="w3-large"> Most hiring posts are published online that aim to make hiring process more immediate, accurate and cost-efficient. However, online exposure of such traditional business procedures has introduced scam problems that may lead to serious loss both for job applicants and employers. Employment fraud has been rampant especially during difficult times when many are vulnerable and in dire need of jobs.</p><br>
+    
+      <h4>Problem Statement</h4>
+      <p class="w3-large">Employment fraud is a issue worth investigating as it can inflict loss of privacy, economic damage or harm the reputation of all stakeholders. Many job posting websites do not regulate the posts uploaded to their websites or verify employers which enables spam posting of fraudulent job post. Even when countermeasures exist, they are usually ad-hoc and their practical value is often questionable. Not to mention today, job frauds has become more resourceful and difficult to distinguish their legitimacy.  </p><br>
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="static/fake_job.png" class="w3-round w3-image w3-opacity-min"  alt="Table Setting" width="600" height="750">
+    </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Solution Section -->
+  <div class="w3-container w3-padding-64" id="solution">
+    <h1>How Can We Fight Fraudulent Posts?</h1><br>
+    <h4>Automated Detection with Deep Learning</h4>
+      <p class="w3-large"> One way to deal tackle job fraud is to create a model that automatically detects and take down fraudulent job postings. A simple classification task can be done with deep learning, which are data-driven and good at handling high-dimensional data.</b></p>
+    <img src="static/deploy.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="1200" height="750">
+    
+  
+<!-- End page content -->
+</div>
+
+{{nav.top.render()}}
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+</head>
+
+
+
+
+
+<h1>Job Recruitment Fraud Dataset</h1>
+
+<p>EMSCAD contains 17,014 legitimate and 866 fraudulent job ads (17,880 in total) published between 2012 to 2014.<br />Available at Employment Scam Aegean Dataset http://emscad.samos.aegean.gr/</p>
+
+<h2>Some insights to the original dataset:</h2>
+
+<ol>
+    <li>Dataset is highly unbalanced</li>
+    <li>Dataset contains blank entries (NaN values) due to factors such as non disclosure of information</li>
+    <li>Dataset contains duplicates, possibly due to identical job advertisement posted with slightly different variables such as different locations or salary</li>
+    <li>Dataset may contain some misclassified samples due to human error from manually annotated samples by specialized Workable employees&nbsp;</li>
+</ol>
+
+<table  id="static_table_ds_dscr" class="display">
+    <thead>
+        <tr>
+            <td>Data Type</td>
+            <td>Name</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">String</td>
+            <td>Title</td>
+            <td>Title of the job advertisement</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>Geographical location of job advertisement in country, state, city format</td>
+        </tr>
+        <tr>
+            <td>Department</td>
+            <td>Department name</td>
+        </tr>
+        <tr>
+            <td>Salary range</td>
+            <td>Numerical range between lower and upper bound pay</td>
+        </tr>
+        <tr>
+            <td rowspan="4">HTML&nbsp;</td>
+            <td>Company profile</td>
+            <td>Company brief</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>Job scope and description</td>
+        </tr>
+        <tr>
+            <td>Requirements</td>
+            <td>Job requirements</td>
+        </tr>
+        <tr>
+            <td>Benefits</td>
+            <td>Job benefits</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Binary</td>
+            <td>Telecommuting</td>
+            <td>True if job is a work from home position</td>
+        </tr>
+        <tr>
+            <td>Company logo</td>
+            <td>True if company logo exist</td>
+        </tr>
+        <tr>
+            <td>Questions</td>
+            <td>True if screening questions exist</td>
+        </tr>
+        <tr>
+            <td>Fraudulent</td>
+            <td>True if job post is labelled as fraudulent class</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Nominal</td>
+            <td>Employment type</td>
+            <td>different types of employment</td>
+        </tr>
+        <tr>
+            <td>Required experience</td>
+            <td>different types of experience</td>
+        </tr>
+        <tr>
+            <td>Required education</td>
+            <td>different types of education level</td>
+        </tr>
+        <tr>
+            <td>Industry</td>
+            <td>different types of job industry</td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>different types of job function</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Main Dataset</strong></p>
+
+
+{% block scripts %}
+<script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $.getJSON('/_get_table', 
+        function(data) {
+            var table_html = $("#raw_table").html(data.raw_table);
+            var table = $("#raw_table").DataTable({
+                data: data.raw_table,
+                columns: data.columns,
+                ordering: true,
+                paging: true,
+                searching: true,
+                scrollX: 400,
+                scrollY: 400
+            });
+        }
+    );
+});
+</script>
+{% endblock %}
+
+<!-- Nav tabs -->
+{{nav.top.render()}}
+
+</html>
