@@ -1,18 +1,14 @@
-# dsc_demo_e2e
-Fraud detection with artificial neural network
+# Fraud detection with artificial neural network
 
 A locally-hosted demo web app built with Python, FLASK and SQLite to determine whether a job post is legitimate or fraudulent. The dataset is trained on with artificial neural network. 
 
-###Web page:
+### Web page:
 
 Self explanatory landing page
 
 ![Home_page1](figures/webapp_page1_1.PNG)
-
 ![Home_page2](figures/webapp_page1_2.PNG)
-
 ![Home_page3](figures/webapp_page1_3.PNG)
-
 ![Home_page4](figures/webapp_page1_4.PNG)
 
 Information on the dataset
@@ -29,7 +25,9 @@ Output of the model is returned as a list for now. Not planning to do UI/UX here
 
 ###Performance:
 
-![Accuracy](figures/fraud_detection_mlp_accuracy.PNG) ![Loss](figures/fraud_detection_mlp_loss.PNG)
+![Accuracy](figures/fraud_detection_mlp_accuracy.PNG) 
+
+![Loss](figures/fraud_detection_mlp_loss.PNG)
 
 ![Confusion](figures/fraud_detection_mlp_confusion.PNG)
 
